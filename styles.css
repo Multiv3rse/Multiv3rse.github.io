@@ -2,11 +2,11 @@ body {
     background-color: #1b1b1b;
 }
 
-/* .center {
-    text-align: center;
-} */
-
 .t1 {
     font-family: 'LEMON MILK', Courier, monospace;
-    color: #FFBF00;
+    background-image: linear-gradient(#FFBF00, #C04000);
+}
+
+div {
+    padding: 100px;
 }
