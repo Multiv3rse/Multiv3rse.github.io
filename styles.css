@@ -1,8 +1,9 @@
 body {
-    background-color: black;
+    background-color: #1B1B1B;
 }
 
-.h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: cadetblue;
+.t1 {
+    font-size: medium;
+    font-family: 'Ailerons', Courier, monospace;
+    color: #FFBF00;
 }
