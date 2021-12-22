@@ -3,8 +3,10 @@ body {
 }
 
 .t1 {
-    font-family: 'LEMON MILK', Courier, monospace;
+    font-family: 'Nexa-Trial', Courier, monospace;
     background-image: linear-gradient(#FFBF00, #C04000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 div {
