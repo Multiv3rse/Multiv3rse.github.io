@@ -15,8 +15,9 @@
         Hello I am Multiv3rse.
     </h1>
     <script>
-        document.getElementById('test').addEventListener("mouseover", mouseOver);
-        document.getElementById('test').addEventListener("mouseout", mouseOut);
+        document.getElementById("test").addEventListener("mouseover", mouseOver);
+        document.getElementById("test").addEventListener("mouseout", mouseOut);
+        document.getElementById("test").addEventListener("click", mouseClick)
 
         function mouseOver() {
             document.getElementById("test").style.color = "white";
@@ -26,6 +27,10 @@
         function mouseOut() {
             document.getElementById("test").style.color = "rgb(255, 191, 0)";
             document.getElementById("test").style.fontWeight = "normal";
+        }
+
+        function mouseClick() {
+            alert("You clicked me!");
         }
     </script>
 </body>
