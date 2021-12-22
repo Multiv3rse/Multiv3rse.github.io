@@ -10,11 +10,23 @@
 </head>
 
 <body>
-    <div>
-        <h1 class="t1 centered">
-            Hello I am Multiv3rse.
-        </h1>
-    </div>
+    <h1 id="test" class="font1 center">
+        Hello I am Multiv3rse.
+    </h1>
+    <script>
+        document.getElementById('test').addEventListener("mouseover", mouseOver);
+        document.getElementById('test').addEventListener("mouseout", mouseOut);
+
+        function mouseOver() {
+            document.getElementById("test").style.color = "white";
+            document.getElementById("test").style.fontWeight = "bold";
+        }
+
+        function mouseOut() {
+            document.getElementById("test").style.color = "rgb(255, 191, 0)";
+            document.getElementById("test").style.fontWeight = "normal";
+        }
+    </script>
 </body>
 
 </html>

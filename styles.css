@@ -2,13 +2,16 @@ body {
     background-color: #1b1b1b;
 }
 
-.t1 {
-    font-family: 'Nexa-Trial', Courier, monospace;
-    background: linear-gradient(90deg, #00ffb3 0%, #0033b3 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 div {
     padding: 100px;
+}
+
+.center {
+    text-align: center;
+}
+
+.font1 {
+    font-family:'Century Gothic', Courier, monospace;
+    font-weight: normal;
+    color: rgb(255, 191, 0);
 }
