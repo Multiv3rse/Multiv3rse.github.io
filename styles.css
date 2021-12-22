@@ -4,7 +4,7 @@ body {
 
 .t1 {
     font-family: 'Nexa-Trial', Courier, monospace;
-    background-image: linear-gradient(#FFBF00, #C04000);
+    background: linear-gradient(90deg, #00ffb3 0%, #0033b3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
