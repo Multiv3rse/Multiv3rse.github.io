@@ -5,34 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
     <title>Multiv3rse</title>
     <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1 id="test" class="font1 center">
-        Hello I am Multiv3rse.
-    </h1>
-    <script>
-        document.getElementById("test").addEventListener("mouseover", mouseOver);
-        document.getElementById("test").addEventListener("mouseout", mouseOut);
-        document.getElementById("test").addEventListener("click", mouseClick)
-
-        function mouseOver() {
-            document.getElementById("test").style.color = "white";
-            document.getElementById("test").style.fontWeight = "bold";
-        }
-
-        function mouseOut() {
-            document.getElementById("test").style.color = "rgb(255, 191, 0)";
-            document.getElementById("test").style.fontWeight = "normal";
-        }
-
-        function mouseClick() {
-            alert("You clicked me!");
-        }
-    </script>
+    <h1>Blackjack</h1>
+    <p id="message-el">Want to play a round?</p>
+    <p id="cards-el">Cards:</p>
+    <p id="sum-el">Sum:</p>
+    <button onclick="startGame()">START GAME</button>
+    <button onclick="newCard()">NEW CARD</button>
 </body>
+<script src="js/main.js"></script>
 
 </html>
