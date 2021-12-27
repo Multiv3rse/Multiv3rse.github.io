@@ -1,42 +1,44 @@
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("assets/Montserrat-Medium.tff") format("truetype"),
+         url("assets/Montserrat-Medium.woff") format("woff"),
+         url("assets/Montserrat-Medium.woff2") format("woff2");
+}
+
 body {
-    background-image: url("assets/table.jpg");
-    background-size: cover;
+    background-color: rgb(25, 25, 30);
     color: white;
     cursor: default;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
+    font-family: "Montserrat", Fallback, sans-serif;
+    font-weight: normal;
     text-align: center;
 }
 
-button {
-	background-color: goldenrod;
-    border: none;
-	border-radius: 100px;
-	color: white;
-    cursor: pointer;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+p {
+    color: white;
+    padding-top: 0px;
+}
+p:hover {
     font-weight: bold;
-    margin-bottom: 3px;
-    margin-top: 3px;
-    padding: 5px;
-	width: 150px;
 }
 
-button:hover {
-	background-color: gold;
+.center {
+    margin: auto;
+    width: 50%;
+    border: none;
+    padding-top: 30px;
+    }
+
+
+.warning-header {
+    border-bottom: 2px solid white;
+    font-family: "Montserrat";
+    font-weight: normal;
+    font-size: 60px;
+    color: rgb(255, 0, 85);
+    padding-bottom: 25px;
 }
-
-button:active {
-	position:relative;
-	top:1px;
+.warning-header:hover {
+    font-weight: bold;
 }
-
-
-h1 {
-    color: goldenrod;
-}
-
-#message-el {
-    font-style: italic;
-}
-
