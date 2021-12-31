@@ -1,44 +1,126 @@
-
-@font-face {
+/* @font-face {
     font-family: "Montserrat";
     src: url("assets/Montserrat-Medium.tff") format("truetype"),
          url("assets/Montserrat-Medium.woff") format("woff"),
          url("assets/Montserrat-Medium.woff2") format("woff2");
-}
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body {
-    background-color: rgb(25, 25, 30);
-    color: white;
-    cursor: default;
-    font-family: "Montserrat", Fallback, sans-serif;
-    font-weight: normal;
+    background-color: #1B181B;
+    color: #fff;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+header {
+    background-color: #1B181B;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #1B181B;
+}
+
+footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    background-color: #1B181B;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+nav li {
+    float: right;
+}
+
+nav a {
+    background-color: #1B181B;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    padding: 21px 0;
     text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 10vw;
 }
 
-p {
-    color: white;
-    padding-top: 0px;
-}
-p:hover {
-    font-weight: bold;
+nav a:hover {
+    background-color: #242124;
+    color: #A57C00;
+    transition: 200ms;
 }
 
-.center {
-    margin: auto;
-    width: 50%;
-    border: none;
-    padding-top: 30px;
-    }
-
-
-.warning-header {
-    border-bottom: 2px solid white;
-    font-family: "Montserrat";
-    font-weight: normal;
-    font-size: 60px;
-    color: rgb(255, 0, 85);
-    padding-bottom: 25px;
+.active {
+    border-bottom: #A57C00 1px solid;
+    color: #A57C00;
 }
-.warning-header:hover {
-    font-weight: bold;
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-text {
+    padding: 30px 0 0 150px;
+}
+
+.hero-image {
+    background-image: url(assets/img2.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin: 0;
+    position: relative;
+}
+
+.hero-text {
+    font-size: 160%;
+    padding: 25vh 30vw 0 30vw;
+    width: 30vw;
+    word-break: keep-all;
+}
+
+.link {
+    text-decoration: none;
+    color: #A57C00;
+}
+
+.link:hover {
+    color: #CBA135;
+    transition: 200ms;
+}
+
+.logo {
+    float: left;
+    height: 40px;
+    padding: 10px 0;
+    width: auto;
+}
+
+.logo-big {
+    float: left;
+    height: 60px;
+    padding: 30px 0;
+    width: auto;
 }
