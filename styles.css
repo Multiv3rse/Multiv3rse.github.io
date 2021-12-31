@@ -85,7 +85,7 @@ nav a:hover {
 }
 
 .hero-image {
-    background-image: url(assets/img2.png);
+    background-image: url(./assets/img2.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
