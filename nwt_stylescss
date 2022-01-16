@@ -1,0 +1,83 @@
+
+:root {
+    --main-color: royalblue;
+    --secondary-color: rgb(50, 65, 105);
+    --alert: orange;
+    --white: white;
+    --gray: lightsteelblue;
+    --transition: 150ms;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    border-bottom: 3px var(--main-color) solid;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+h2 {
+    color: var(--main-color);
+}
+
+input {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+    color: var(--secondary-color);
+    margin: 2px 0;
+    padding: 5px;
+
+}
+
+input:focus:not(.submit) {
+    outline: 2px var(--main-color) solid;
+}
+
+p {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+select {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+    color: var(--secondary-color);
+    margin: 2px 0;
+    padding: 5px;
+}
+
+span {
+    color: var(--gray);
+    font-weight: normal;
+}
+
+label {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.submit {
+    background-color: var(--main-color);
+    color: var(--white);
+    cursor: pointer;
+    padding: 5px 20px;
+    transition-duration: 200ms;
+}
+
+.submit:hover {
+    background-color: var(--secondary-color);
+}
+
+#text-ideal, #text-real {
+    color: var(--alert);
+    font-weight: bold;
+}
