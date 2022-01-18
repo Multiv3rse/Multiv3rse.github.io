@@ -15,7 +15,7 @@
         <h2>Ertragsberechnung</h2>
         <form onsubmit="calc(); return false;">
             <label for="p">Nennleistung <span>[kWp]</span></label><br>
-            <input type="number" name="p" id="p"><br><br>
+            <input type="number" min=0 step="any" name="p" id="p"><br><br>
             <label for="g">Mittlere Globalestrahlung im Jahr <span>[kWh/m²*a]</span></label><br>
             <input type="number" name="g" id="g" value="1116"><br><br>
             <label for="a">Azimut</label>
