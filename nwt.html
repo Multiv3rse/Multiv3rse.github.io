@@ -14,29 +14,37 @@
         <h1>PV Rechner</h1>
         <h2>Ertragsberechnung</h2>
         <form onsubmit="calc(); return false;">
-            <label for="p">Nennleistung <span>[kWp]</span></label><br>
-            <input type="number" min=0 step="any" name="p" id="p"><br><br>
-            <label for="g">Mittlere Globalestrahlung im Jahr <span>[kWh/m²*a]</span></label><br>
-            <input type="number" name="g" id="g" value="1116"><br><br>
-            <label for="a">Azimut</label>
-            <select name="a" id="a">
-                <option value="60">60°</option>
-                <option value="45">45°</option>
-                <option value="30">30°</option>
-                <option value="15">15°</option>
-                <option value="0">0°</option>
-                <option value="-15">-15°</option>
-                <option value="-30">-30°</option>
-                <option value="-45">-45°</option>
-                <option value="-60">-60°</option>
+            <label for="peak-leistung">Nennleistung <span>[kWp]</span></label><br>
+            <input type="number" min=0 step="any" name="peak-leistung" id="peak-leistung"><br><br>
+            <label for="monat">Monat / Jahr</label><br>
+            <select name="monat" id="monat">
+                <option value="jahr">Jahr</option>
+                <option value="januar">Januar</option>
+                <option value="februar">Februar</option>
+                <option value="märz">März</option>
+                <option value="april">April</option>
+                <option value="mai">Mai</option>
+                <option value="juni">Juni</option>
+                <option value="juli">Juli</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="oktober">Oktober</option>
+                <option value="november">November</option>
+                <option value="dezember">Dezember</option>
+            </select><br><br>
+            <label for="azimut">Azimut</label>
+            <select name="azimut" id="azimut">
+                <option value="süd">Süd</option>
+                <option value="südwestost">Südwest/Südost</option>
+                <option value="westost">West/Ost</option>
             </select><br>
-            <label for="b">Neigung</label>
-            <select name="b" id="b">
-                <option value="0">0°</option>
-                <option value="15">15°</option>
-                <option value="30">30°</option>
+            <label for="neigung">Neigung</label>
+            <select name="neigung" id="neigung">
+                <option value="20">20°</option>
+                <option value="37">37°</option>
                 <option value="45">45°</option>
                 <option value="60">60°</option>
+                <option value="90">90°</option>
             </select><br><br>
             <input type="submit" value="Ertrag Berechnen" class="submit"><br>
             <p id="calc-ideal">Ertrag Ideal: </p>
