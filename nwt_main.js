@@ -53,7 +53,7 @@ function printIdeal(energieIdeal) {
     var textIdeal = document.createElement("span")
     textIdeal.setAttribute("id", "text-ideal")
     calcOutputIdeal.appendChild(textIdeal)
-    document.getElementById("text-ideal").innerHTML = energieIdeal + " kWh/Jahr"
+    document.getElementById("text-ideal").innerHTML = energieIdeal + " kWh/" + monat.replace(/^\w/, (c) => c.toUpperCase())
 }
 
 function printReal(energieReal) {
@@ -61,7 +61,7 @@ function printReal(energieReal) {
     var textReal = document.createElement("span")
     textReal.setAttribute("id", "text-real")
     calcOutputReal.appendChild(textReal)
-    document.getElementById("text-real").innerHTML = energieReal + " kWh/Jahr"
+    document.getElementById("text-real").innerHTML = energieReal + " kWh/" + monat.replace(/^\w/, (c) => c.toUpperCase())
 }
 
 
